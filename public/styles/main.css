@@ -1,0 +1,370 @@
+
+
+@font-face {
+    font-family: 'Brandon_thin';
+    src: url('/fonts/Brandon_thin.otf');
+}
+
+@font-face {
+    font-family: 'Brandon_thin_it';
+    src: url('/fonts/Brandon_thin_it.otf');
+}
+
+@font-face {
+    font-family: 'Brandon_med';
+    src: url('/fonts/Brandon_med.otf');
+}
+
+@font-face {
+    font-family: 'Brandon_light';
+    src: url('/fonts/Brandon_light.otf');
+}
+
+@font-face {
+    font-family: 'Brandon_bld';
+    src: url('/fonts/Brandon_bld.otf');
+}
+
+
+body{
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: visible;
+    background-color:antiquewhite !important;
+/*        background-color: rgba(0,0,0,0.5);*/
+}
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+
+.project-container {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    top: 2em;
+    width: auto;
+    display: inline;
+    height: auto;
+/*    background-color: rgba(0,0,0,0.5);*/
+}
+
+hr {
+    display:block;
+    height: 1px;
+    background: transparent;
+    width:100%;
+    border: none;
+    border-top:solid 1px #aaa;
+}
+
+.custom-layer {
+    width: auto;
+    position: fixed;
+    left: 50%;
+    top:50%;
+    background-color: transparent;
+    z-index: 50;
+}
+
+.loginform {
+     position: fixed;
+    width:200px;
+    height: auto;
+    left:40% !important;
+    top:30% !important;
+    overflow: scroll !important;
+    background-color: transparent;
+}
+.custom-layer-messages {
+    position: fixed;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top:75%;
+    background-color: transparent;
+    z-index: 50;
+}
+
+#uploadModal{
+    width:100%;
+    height: auto;
+    top:30% !important;
+    overflow: scroll !important;
+}
+
+.btn-file {
+  position: relative;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 14px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+/*    background: red;*/
+    cursor: inherit;
+    display: block;
+}
+
+input[readonly] {
+    background-color: whitesmoke!important;
+    cursor: text !important;
+}
+
+
+#upload-file-container {
+/*    background: url(/img/upload_button.png) no-repeat;*/
+}
+
+#upload-file-container input {
+    filter: alpha(opacity=0);
+    opacity: 0;
+    text-align: center;
+    color: beige;
+}
+
+.uploadButton {
+/*    background:url(/img/upload_button.png) no-repeat;*/
+    background-color: transparent;
+    cursor:pointer;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: -13px;
+/*    margin-top: 19em;*/
+    border: none;
+/*    color:white;*/
+    padding-bottom: 5px;
+}
+
+
+
+/**********************************
+    Mgmt page
+**********************************/
+
+.mgmt-block {
+    position: absolute;
+    margin-left: 0;
+    margin-top: 5%;
+    width: 100%;
+    min-width: 100%;
+    display: inline;
+    height: auto;
+    color: black;
+    font-family: 'Brandon_light';
+}
+
+
+
+/********************************/
+/******** Text Queries **********/
+/********************************/
+
+/*
+p,.btn,.input {
+    font-family: 'Brandon_thin';
+}
+*/
+
+.projectdesc {
+    font-family: 'Brandon_light', ;
+    font-size: 12pt;
+}
+
+.projectheading {
+    font-family: 'Brandon_thin_it';
+    font-size: 12pt;
+}
+
+.projectfooter{
+    font-family: 'Brandon_bld';
+    font-size: 12pt;
+}
+
+
+
+/*
+@media screen and (min-width: 767px) {
+  p,input,div,span,h4 {
+    font-size: 100%;
+  }
+  h1 {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p,input,div,span,h4 {
+    font-size: 90%;
+  }
+  h1 {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+    p {
+    font-size: 10px;
+  }
+}
+*/
+
+
+@media screen and (min-width: 1161px) {
+
+    .navbar-header #brand{
+        left:30%;
+        top:25%;
+        position:relative;
+    }
+
+    .uploadButton {
+        margin-top:10px;
+    }
+
+    .navbar-collapse {
+        left:38%;
+        top:25%;
+        max-width:500px;
+        position:relative;
+    }
+
+}
+
+@media screen and (min-width: 728px) and (max-width: 1160px) {
+
+    .navbar-toggle {
+        margin-left:10%;
+        width:50px;
+    }
+
+    .navbar-header #brand{
+        left:25%;
+        top:25%;
+        position:relative;
+    }
+
+    .navbar-collapse {
+        left:38%;
+        top:25%;
+        max-width:500px;
+        position:relative;
+    }
+}
+
+
+@media screen and (min-width: 773px) and (max-width: 997px) {
+
+    #videowrapper {
+        left:15%;
+        margin-left: 0px !important;
+    }
+
+    .navbar-collapse {
+        left:30%;
+        top:25%;
+        max-width:500px;
+        position:relative;
+    }
+}
+
+
+@media (min-width:700px) and (max-width:900px) {
+
+     .navbar-header #brand {
+        margin-left:30px;
+        margin-top:10px;
+        width:380px;
+    }
+}
+
+@media screen and (min-width: 500px) and  (max-width: 772px) {
+
+    #videowrapper {
+        left:15%;
+        margin-left: 0px !important;
+    }
+}
+
+@media screen and (min-width: 401px) and  (max-width: 700px) {
+
+    .navbar-toggle {
+        margin-left:10%;
+        width:45px;
+    }
+
+    .navbar-header #brand {
+        margin-left:30px;
+        margin-top:10px;
+        width:300px;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .navbar-toggle {
+        margin-left:10%;
+        width:45px;
+    }
+
+    .navbar-header #brand {
+        margin-left: 10px;
+        margin-top: 10px;
+        width:300px;
+    }
+}
+
+
+@media screen and (min-width 501px) and (max-width:767px) {
+    .navbar-collapse {
+        margin-left: 14%;
+    }
+}
+@media screen and (max-width:500px) {
+    #videometa, #videowrapper {
+       display:none;
+    }
+     .navbar-collapse {
+        margin-left: 65%;
+    }
+    .uploadButton {
+        margin-top:90px !important;
+        margin-left:0px !important;
+        top:25%;
+
+    }
+
+    .uploadButton img {
+        width: 150px;
+    }
+}

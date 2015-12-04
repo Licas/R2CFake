@@ -1,0 +1,23 @@
+
+
+.profile-container {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    top: 2em;
+    width: auto;
+    display: inline;
+    height: auto;
+/*    background-color: rgba(0,0,0,0.5);*/
+}
+
+
+.contactheading{
+    font-family: 'Brandon_bld';
+    font-size: 12pt;
+}
+
+.contactdesc {
+    font-family: 'Brandon_thin';
+    font-size: 12pt;
+}

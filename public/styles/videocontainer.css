@@ -1,0 +1,90 @@
+#videoplayer {
+    z-index: 5;
+}
+
+#tmp_poster_div {
+    z-index:1;
+}
+
+#videowrapper{
+    margin-top:100px;
+
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    text-align: left;
+    cursor: pointer;
+    position:relative;
+}
+
+#videowrapper:after {
+    content: '';
+    display: block;
+    background: url(/img/lifebehindthewindow_cornice_320x640_1.png) no-repeat top left transparent;
+    height: 100%;
+    width:100%;
+    left: 0px;
+    top: 0px;
+    margin-left:-80px;
+    margin-top:-70px;
+    position: absolute;
+    z-index: 10;
+}
+
+
+
+@media  (min-width: 500px)  {
+    #videowrapper:after{
+           background-size: 500px 690px;
+	}
+
+    #videowrapper{
+        width: 500px;
+		height: 670px;
+        margin-left: 30px;
+	}
+
+    #videoplayer {
+		width: 240px;
+		height: 480px;
+         margin-top: 63px;
+        margin-left:50px;
+    }
+
+    #temp_poster {
+		width: 300px;
+		height: 500px;
+         margin-top: 63px;
+        margin-left:19px;
+    }
+}
+
+
+@media  (max-width: 499px) {
+    #videowrapper:after{
+        background-size: 380px 550px;
+        margin-left: 0px;
+	}
+
+    #videowrapper{
+		width: 380px;
+		height: 540px;
+/*        margin-left:-20px;*/
+	}
+
+    #videoplayer {
+		width: 200px;
+		height:340px;
+        margin-top: 56px;
+        margin-left: 88px;
+	}
+
+    #temp_poster {
+		width: 200px;
+		height:340px;
+        margin-top: 56px;
+/*        margin-left: 88px;*/
+    }
+}
+
